@@ -1,0 +1,70 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+.inner-container{
+    border: 1px solid black;
+    width:500px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom:50px;
+}
+.container{
+    padding: 0px 20px;
+    margin:1px;
+}
+.outer{
+    padding:4px;
+}
+.outernav{
+    margin: 5px 5px 15px 5px;
+    padding:5px;
+    color: #2cd3a7;
+    height: 50px;
+    font-size: x-large;
+}
+.outer a{
+    color:#2cd3a7;
+    font-size: medium;
+}
+.title{
+    margin: 0px;
+    width: auto;
+    border-radius: 7px 7px 0px 0px;
+    padding:10px 0px 0px 20px;
+    height:50px;
+    background-color: rgb(153, 153, 153);
+    color: whitesmoke;
+}
+input[type="text"]{
+    
+    border-radius: 7px;
+    height: 30px;
+    border:1px groove gray;
+    width: 100%;
+}
+
+select{
+    background-color: #2cd3a7;
+    color: white;
+    padding-left: 8px;
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+#sendbtn{
+    width:60px;
+    float:right;
+    height:30px;
+    background-color: #2cd3a7;
+    border:none;
+    border-radius: 3px;
+    margin: 5px;
+}
+#attachFile{
+    background-color: rgb(221, 219, 219);
+    border: 1px none black;
+}
+input[type="file"] button[value="Choose File"]{
+    background-color: #2cd3a7;
+}
