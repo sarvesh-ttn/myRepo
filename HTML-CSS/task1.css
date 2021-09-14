@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container{
+    margin-left: 10px;
+    padding: 0px 35px;
+    background-color: rgb(102, 102, 102);
+}
+.headerTop{
+    background-color: rgb(68, 68, 68);
+    padding: 5px;
+}
+.headerTop h1 {
+    color: rgb(179, 149, 149);;
+}
+.nav-link{
+    background-color: black;
+    height: 50px;
+    width:95%;
+    margin:5px 5px 5px 30px;
+    padding-top: 24px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgb(179, 149, 149);
+    text-transform: uppercase;
+    padding: 10px;
+}
+.middle{
+    background-color: rgb(250, 250, 250);
+    padding:10px;
+}
+.squareBox{
+    background-color: rgb(68, 68, 68);
+    margin:30px;
+    height: 200px;
+    padding: 140px 40px 10px 100px;
+}
+.resolution{
+    width: 200px;
+    margin: auto;
+    color: white;
+    font-size: x-large;
+}
+.randomText{
+    background-color: rgb(228, 227, 227);
+    margin: 25px;
+    padding:2px 1px 0px 6px;
+    height: 70px;
+    word-spacing: 2px;
+    color: rgb(59, 59, 59);
+}
+.displayBox{
+    width: 100%;
+    display: flex;
+    margin:5px;
+    padding:10px;
+}
+.box{
+    flex-direction: row;
+    margin: 1px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(68, 68, 68);
+}
+.box h1{
+    padding: 150px 70px;
+}
+.outerbox{
+    position: relative;
+    border: 1px dotted black;
+    margin-right:40px;
+    padding: 1px 1px 17px 1px;
+}
+.imagecaption{
+    display: block;
+    width: 250px;
+    background-color: rgb(151, 142, 146);
+    position: absolute;
+    top: 302px;
+    right:2px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    height: 40px;
+    color:whitesmoke;
+    padding: 15px 0px 2px 38px;
+}
