@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contentWrapper{
+    width: 800px;
+    margin: auto;
+    height: fit-content;
+    border:rgb(206, 206, 206) solid 2px;
+}
+nav{
+    height:50px;
+    background-color: seagreen;
+    border-bottom: 2px solid black;
+    padding:5px;
+}
+.nav-login{
+    float:right;
+    margin:10px 20px 5px 5px;
+    height: 30px;
+    width:60px;
+    border-radius: 10px;
+    border-style: 2px hidden silver;
+    font-style: oblique;
+    cursor:pointer;
+}
+
+.nav-logout{
+    margin:10px 20px 5px 5px;
+    height: 30px;
+    width:60px;
+    border-radius: 10px;
+    border-style: 2px hidden silver;
+    font-style: oblique;
+    cursor:pointer;
+}
+.wrapper{
+    max-height: 100%;
+}
+.left{
+    padding:5px;
+    float:left;
+    width:100px;
+    height:481px;
+    border-right: 2px solid steelblue;
+}
+.left li{
+    list-style-type: none;
+    padding:5px;
+}
+.left a{
+    display: block;
+    margin: 15px;
+    text-decoration:none;
+    color:tomato
+}
+.right{
+    margin-left: 110px;
+    padding:5px;
+    background-color:rgb(206, 206, 206)
+}
+.div-flexContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    padding:1px;
+}
+.fourBox{
+    width:200px;
+    height:30px;
+    margin: 10px;
+    color: olive;
+    text-align: center;
+    padding-top:15px;
+    background-color: mediumturquoise;
+    border:rgb(59, 59, 59) solid 2px;
+}
+
+.hero{
+    margin:5px;
+    padding: 5px;
+    display: inline-block;
+}
+.heroImage{
+    float: left;
+    padding: 1px;
+    border:2px silver groove; 
+    margin-right: 5px;
+}
+.randomText,.randomTex h3{
+    margin-top: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.lineBreak{
+    border: 1px solid black;
+    max-width: 100%;
+    margin-left: 5px;
+}
+.formInput{
+    margin:5px;
+    padding:5px;
+    width: 30%;
+    display: inline-block;
+}
+.formData input{
+    height:30px;
+}
+.formData input[type="submit"]{
+    width:100px;
+    height:40px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size: 1rem;
+    background-color: rebeccapurple;
+    color: rgb(255, 255, 255);
+}
+input[type="submit"]:active{
+    width: 90px;
+    height: 35px;
+    transition: ease-in-out;
+}
+.table{
+padding: 10px;
+}
+.tableData{
+    width: 300px;
+    margin:auto;
+    padding:5px;
+    text-align: center;
+    background-color: skyblue;
+}
+table,th,td{
+    border-collapse: collapse;
+    border:2px solid black;
+}
