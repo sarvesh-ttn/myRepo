@@ -66,9 +66,9 @@ const personDetails =[
     ]
 
 // part a
-// console.log(...personDetails.filter((person)=>person.salary >5000 ));
+console.log(...personDetails.filter((person)=>person.salary >5000 ));
 
-//  part b
+//  part c
 // console.log(...personDetails.filter((person)=>{
 //     if(person.salary < 1000 && person.age >20){
 //         console.log(person)
@@ -77,4 +77,4 @@ const personDetails =[
 // }));
 
 // part b
-console.log(...personDetails.sort((a,b)=> a.age- b.age));
+// console.log(...personDetails.sort((a,b)=> a.age- b.age));

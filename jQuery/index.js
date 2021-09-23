@@ -51,13 +51,13 @@ $(document).ready(function () {
   // $("a").click(function(e){e.preventDefault()})
 
   // qstn 12
-  $('div.qstn12').click((e)=>{
-    $('span#qstn12').append("hey grandparent in child");
-})
-$('p.q12').click((e)=>{
-    e.stopPropagation();
-    $('span#qstn12').append("hey child again");
-})
+//   $('div.qstn12').click((e)=>{
+//     $('span#qstn12').append("hey grandparent in child");
+// })
+// $('p.q12').click((e)=>{
+//     e.stopPropagation();
+//     $('span#qstn12').append("hey child again");
+// })
 
   //  qstn 13
   // $(".panel").each(function(){
