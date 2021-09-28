@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      body {
+        background-color: rgb(8, 167, 241);
+        font-size: 30px;
+        font-family: Orbitron;
+      }
+
+      .clock {
+        /* transform: translateX(-50%) translateY(-50%); */
+        color: #f4f6f7;
+        text-align: center;
+        letter-spacing: 7px;
+      }
+      #demo{
+        padding-top: 200px;
+        text-align: center;
+        color: #fff;
+      }
+      #date{
+        text-align: center;
+        color:#fff;
+      }
+    </style>
+  </head>
+  <body>
+  <p id="demo"></p>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <p id="date"></p>
+    
+  </body>
+  <script>
+    function showTime() {
+      var date = new Date();
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+      var displayDate = date.toUTCString().substr(4, 13);
+      // console.log(displayDate,h,m,s, new Date().toLocaleTimeString());
+      var session = "AM";
+
+      if (h == 0) {
+        h = 12;
+      }
+
+      if (h > 12) {
+        h = h - 12;
+        session = "PM";
+      }
+
+      h = h < 10 ? "0" + h : h;
+      m = m < 10 ? "0" + m : m;
+      s = s < 10 ? "0" + s : s;
+      if (h <= 12 && session == "AM") {
+        const greeting = document.getElementById("demo");
+        greeting.textContent = "Good Morning";
+      } else if (h < 4 && session == "PM") {
+        const greeting = document.getElementById("demo");
+        greeting.textContent = "Good Afternoon";
+      } else if (h < 8 && session == "PM") {
+        const greeting = document.getElementById("demo");
+        greeting.textContent = "Good Evening";
+      }
+      var time = h + ":" + m + ":" + s + " " + session;
+      //   document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+      document.getElementById("date").textContent = displayDate;
+
+      setTimeout(showTime, 1000);
+    }
+
+    showTime();
+    // else if()
+
+    // function for displaying time
+    // setInterval(async () => {
+    //   var getTime = new Date().toLocaleTimeString();
+    //   var getDate = new Date().toUTCString().substr(4, 13);
+    //   const appendDate = document.getElementById("demo");
+    //   appendDate.textContent = getDate;
+    //   const appendTime = document.getElementById("time");
+    //   appendTime.textContent = getTime;
+    //   greetMsg();
+    // }, 1000);
+    // const greetMsg = () => {
+    //   const greetMsg = document.getElementById("greet");
+    //   //   var getTime = new Date(2021, 9, 28, 19, 35, 00).toLocaleTimeString();
+    //   var hours = new Date(2021, 9, 28, 07, 35, 00).toLocaleTimeString([], {
+    //     hour: "2-digit",
+    //   });
+    //   if (hours < 10) {
+    //     hours.hour = `0${hours.hour}`;
+    //   }
+    //   var ampm = hours.substr(8, 9);
+    //   hours = parseInt(hours);
+    //   console.log(" ", hours);
+    //   if (hours.hour > 4 && ampm == "PM") {
+    //     greetMsg.textContent = "Good Afternoon";
+    //     console.log("GA");
+    //   } else if (hours.hour < 08 && ampm == "PM") {
+    //     greetMsg.textContent = "Good Evening";
+    //     console.log("GE");
+    //   } else if (hours.hour > 04 && ampm == "AM") {
+    //     greetMsg.textContent = "Good Morning";
+    //     console.log("GM");
+    //   } else console.log("GN");
+    //   // greetMsg.textContent = "Good Night";
+    // };
+    //
+  </script>
+</html>
