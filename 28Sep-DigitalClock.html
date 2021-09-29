@@ -7,30 +7,44 @@
     <title>Digital Clock</title>
     <style>
       body {
-        background-color: rgb(8, 167, 241);
-        font-size: 30px;
-        font-family: Orbitron;
+        background-color: rgb(3, 134, 195);
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
       }
 
       .clock {
         /* transform: translateX(-50%) translateY(-50%); */
         color: #f4f6f7;
         text-align: center;
-        letter-spacing: 7px;
+        letter-spacing: 0px;
+        font-size: 90px;
+        font-weight:900;
+      }
+      .border{
+        width: 80px;
+        margin: auto auto 25px auto;
+        background-color: rgb(255, 255, 255);
+        height: 17px;
       }
       #demo{
         padding-top: 200px;
+        font-size: larger;
+        font-weight: 300;
         text-align: center;
         color: #fff;
       }
       #date{
         text-align: center;
         color:#fff;
+        font-size: 40px;
+        font-weight: 400;
       }
     </style>
   </head>
   <body>
   <p id="demo"></p>
+  <div class="border"></div>
     <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
     <p id="date"></p>
     
@@ -57,6 +71,7 @@
       h = h < 10 ? "0" + h : h;
       m = m < 10 ? "0" + m : m;
       s = s < 10 ? "0" + s : s;
+      // display message
       if (h <= 12 && session == "AM") {
         const greeting = document.getElementById("demo");
         greeting.textContent = "Good Morning";

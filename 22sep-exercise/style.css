@@ -133,8 +133,9 @@ padding:12px 15px;
 }
 .heroSection{
     height: 500px;
-    background: url(/schoolbg.jpg) no-repeat ;
-    background-size: cover;
+    width:100vw;
+    background: url(./schoolbg.jpg) no-repeat center center/cover;
+    /* background-size: cover; */
 }
 .heroText{
     width:500px;
