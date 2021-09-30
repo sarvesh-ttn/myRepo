@@ -1,27 +1,21 @@
     //  Question 1
-// class Person{
-//     constructor(position,exp){
+    function Person(){
 
-//         this.position = position;
-//         this.exp =exp+" years";
-//     }
+    }
+    Person.prototype.prsn_prop = "I'm Person,Super Class";
+    var proto = new Person();
 
-//     //    role = function(){
-//     //     document.writeln(`${this.position} Person class function.`);
-//     // }
-// }
-// class Employee extends Person {
-//     role(){
-//         document.writeln(`${this.position} Employee class`);
-//     }
-// }
-// class Developer extends Employee {
-//     role(){
-//         document.writeln(`${this.position},  with an experience of ${this.exp}  from Developer class`,);
-//     }
-// }
-// let newer = new Developer('Software Engineer',5);
-// newer.role();
+    proto.emp_prop = "I'm an Employee";
+    function Employee(){
+
+    }
+    Employee.prototype = proto;
+    var developer = new Employee();
+    developer.dev_prop ="I'm a developer"
+    console.log(developer.prsn_prop);
+    console.log(developer.emp_prop);
+    console.log(developer.dev_prop);
+
 
         // Question 2
 // const nums =[1,2,3,4,5];
