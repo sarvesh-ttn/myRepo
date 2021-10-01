@@ -1,20 +1,20 @@
     //  Question 1
-    function Person(){
+    // function Person(){
 
-    }
-    Person.prototype.prsn_prop = "I'm Person,Super Class";
-    var proto = new Person();
+    // }
+    // Person.prototype.prsn_prop = "I'm Person,Super Class";
+    // var proto = new Person();
 
-    proto.emp_prop = "I'm an Employee";
-    function Employee(){
+    // proto.emp_prop = "I'm an Employee";
+    // function Employee(){
 
-    }
-    Employee.prototype = proto;
-    var developer = new Employee();
-    developer.dev_prop ="I'm a developer"
-    console.log(developer.prsn_prop);
-    console.log(developer.emp_prop);
-    console.log(developer.dev_prop);
+    // }
+    // Employee.prototype = proto;
+    // var developer = new Employee();
+    // developer.dev_prop ="I'm a developer"
+    // console.log(developer.prsn_prop);
+    // console.log(developer.emp_prop);
+    // console.log(developer.dev_prop);
 
 
         // Question 2
@@ -77,16 +77,24 @@
 // addSum(21,45,12,-10);
 
             //  Qstn 5
-// var count=0;
-// function MyObj() {
-//     count+=1;
-//     MyObj.numInstances = (MyObj.numInstances || 0) + 1;
-//   }
-//   var a = new MyObj();
-//   var b = new MyObj();
-//   var a = new MyObj();
-// console.log(MyObj.numInstances+" is the number of instances of the function ;;"+count +" is how many times the function is invoked");
+// const invokeChecker= (function(){
+//     let invoked =0;
+//     let countInstance=0;
+//     return function fn2(){
+//         if(new.target) ++countInstance;
+//         else invoked++
 
+//         return {
+//             invoked,countInstance
+//         };
+//     };
+// })();
+// invokeChecker();
+// invokeChecker();
+// var obj1 = new invokeChecker();
+// var obj2 = new invokeChecker();
+// console.log(obj1);
+// console.log(invokeChecker());
             // Question 6
 // const getBtn = document.querySelector("button").addEventListener("click",counter());
 // function counter(){
